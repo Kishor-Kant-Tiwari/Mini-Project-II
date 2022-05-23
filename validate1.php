@@ -2,7 +2,8 @@
 <html>
 <head>
   
-<title>User Details</title>
+<title>ADMIN</title>
+<link rel="icon" href="./Images/logo.png" type="image/x-icon">
 <script>
   function preventBack() {
     window.history.forward();

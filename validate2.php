@@ -2,7 +2,8 @@
 <html>
 <head>
   
-<title>User Details</title>
+<title>Order Details</title>
+<link rel="icon" href="./Images/logo.png" type="image/x-icon">
 <script>
   function preventBack() {
     window.history.forward();
@@ -38,7 +39,7 @@
 .logoutlbl{
   position: fixed;
   right: 10px;
-  top: 200px;
+  top: 161px;
   padding: 10px 10px;
 
 
