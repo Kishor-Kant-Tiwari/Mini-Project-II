@@ -16,7 +16,7 @@
 
 
 
-shjww::kishor.tiwari_cs20@gla.ac.in::9528343562::Deen Dayal Dham::
+
 Pizza::Kishor Kant Tiwari::kishor.tiwari_cs20@gla.ac.in::9528343562::1::Deen Dayal Dham::
 Pasta::Kishor Kant Tiwari::kishor@gmail.com::9528343562::1::DEEN DHAM FARAH::
 Pizza::Kishor Kant Tiwari::kishor@gmail.com::9528343562::1::DEEN DHAM FARAH::
