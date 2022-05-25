@@ -40,17 +40,33 @@
   position: fixed;
   right: 10px;
   top: 161px;
-  padding: 10px 10px;
-
-
-}
-.logoutlbl
-{
+  padding: 6px 4px;
   background-color: rgb(137, 252, 92);
   cursor: pointer;
   border-radius: 10px;
+  text-decoration: none;
+
 
 }
+.logoutlbl1{
+  position: fixed;
+  right: 81px;
+    top: 162px;
+  padding: 6px 4px;
+  background-color: rgb(137, 252, 92);
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+
+
+}
+a{
+  text-decoration: none;
+}
+
+  
+
+
 .logoutlbl:hover
 {
   background-color: rgb(191, 240, 158);
@@ -71,6 +87,8 @@
     <form  method="post">
   
   <h1 style="text-align: right; color: pink;"><button type="Button" class="logoutlbl"><a href="Admin.html">Log Out</button></h1></a>
+  <h1 style="text-align: right; color: pink;"><button type="Button" class="logoutlbl1"><a href="validate3.php">Contact us Details</button></h1></a>
+  
 </form>
 <h1 style="text-align: center; color: black;">Order Details</h1>
 <p style="border: 2px solid darkblue; border-radius: 20px; text-align: center;">

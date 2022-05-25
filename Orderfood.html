@@ -64,7 +64,7 @@
         <fieldset style="width: 660px; margin: auto; padding: 0px; border: 3px solid black;">
             <legend style="text-decoration: solid; font-size: 20px;" >Confirm Order</legend>
         <div id="contact-box">
-            <form action="Store.php" method="Post" autocomplete="off">
+            <form action="Store.php" method="Post" name="myForm" onsubmit="return validateForm()" autocomplete="off">
                 
             
                 <img src="./burger.jpg" height="130px" width="130px" alt="" style="margin-top: 15px; margin-left: -126px;">
@@ -77,23 +77,23 @@
                 
                 <div class="form-group">
                     <label for="name" style="margin-top: 5px;">Name :</label>
-                    <input type="text" name="name1" id="name1" placeholder="Enter your Name" required>
+                    <input type="text" name="name1" id="name1" placeholder="Enter your Name" >
                 </div>
                 <div class="form-group">
                     <label for="email">Email :</label>
-                    <input type="email" name="email1" id="email1" placeholder="Enter your Email" required>
+                    <input type="email" name="email1" id="email1" placeholder="Enter your Email" >
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone:</label>
-                    <input type="tel" name="Phone1" id="Phone1" placeholder="Enter your Mobile Number" required>
+                    <input type="tel" name="Phone1" id="Phone1" placeholder="Enter your Mobile Number" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
                 </div>
                 <div class="form-group">
                     <label for="phone">Quantity:</label>
-                    <input type="number" name="name3" id="name3" placeholder="Enter Food Quantity" required>
+                    <input type="number" name="name3" id="name3" placeholder="Enter Food Quantity">
                 </div>
                 <div class="form-group">
                     <label for="message">Address :</label>
-                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter your Address" required></textarea>
+                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter your Address"></textarea>
                 </div>
                 <div class="submit">
                 <input type="submit" value="SUBMIT" style="cursor: pointer;">
@@ -102,5 +102,35 @@
         </div>
         </fieldset>
     </section>
+    <script>
+        function validateForm() {
+          let a = document.forms["myForm"]["name1"].value;
+          let b = document.forms["myForm"]["email1"].value;
+          let c = document.forms["myForm"]["Phone1"].value;
+          let d = document.forms["myForm"]["name3"].value;
+          let e = document.forms["myForm"]["Message"].value;
+
+          if (a == "") {
+            alert("Please Enter Your Name");
+            return false;
+          }
+          if (b == "") {
+            alert("Please Enter Your Email");
+            return false;
+          }
+          if (c == "") {
+            alert("Please Enter Your Mobile Number");
+            return false;
+          }
+          if (d == "") {
+            alert("Please Enter a Quantity");
+            return false;
+          }
+          if (e == "") {
+            alert("Please Enter Your Address");
+            return false;
+          }
+        }
+        </script>
 </body>
 </html>
