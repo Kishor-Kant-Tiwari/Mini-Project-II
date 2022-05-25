@@ -2,6 +2,10 @@
 *{
     margin: 0px;
     padding: 0px;
+    
+}
+body{
+    flex-wrap: wrap;
 }
 html{
     scroll-behavior: smooth;
@@ -128,6 +132,8 @@ text-decoration: none;
 #services .box p{
     font-family: 'Bree Serif', serif;
 }
+
+
 
 /* Client section */
 #client-section{
